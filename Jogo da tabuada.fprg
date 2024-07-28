@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="joaov"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-28 02:17:32 "/>
+        <attribute name="created" value="am9hb3Y7SlY7MjAyNC0wNy0yODsiMTE6NTA6MjcgIjsxODk5"/>
+        <attribute name="edited" value="am9hb3Y7SlY7MjAyNC0wNy0yODsiMDI6MTc6MzIgIjsxOzIwMDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="desafio1, desafio2, desafio3" type="Integer" array="False" size=""/>
+            <assign variable="desafio1" expression="15*2"/>
+            <assign variable="desafio2" expression="9 * 9"/>
+            <assign variable="desafio3" expression="5 * 5"/>
+            <declare name="resposta" type="Integer" array="False" size=""/>
+            <assign variable="resposta" expression="0"/>
+            <while expression="resposta = 0">
+                <output expression="&quot;Bem vindo ao jogo da tabuada&quot;" newline="True"/>
+                <output expression="&quot;O objetivo do jogo e reponder corretamente as mutiplica&#231;&#227;o apresentada, se correta voc&#234; passa para proxima se errada o jogo acaba&quot;" newline="True"/>
+                <output expression="&quot;Vamos comecar&quot;" newline="True"/>
+                <output expression="&quot;Quanto &#233; 15 X 2? &quot;" newline="True"/>
+                <do expression="resposta = 30">
+                    <input variable="resposta"/>
+                    <if expression="resposta != 30">
+                        <then>
+                            <output expression="&quot;Resposta errada&quot;" newline="True"/>
+                            <output expression="&quot;FIM DE JOGO&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Resposta correta&quot;" newline="True"/>
+                            <output expression="&quot;Vamos para proxima pergunta&quot;" newline="True"/>
+                            <output expression="&quot;Quanto &#233; 9 X 9? &quot;" newline="True"/>
+                            <input variable="resposta"/>
+                            <if expression="resposta != 81">
+                                <then>
+                                    <output expression="&quot;Resposta errada&quot;" newline="True"/>
+                                    <output expression="&quot;FIM DE JOGO&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Resposta correta&quot;" newline="True"/>
+                                    <output expression="&quot;Vamos para proxima pergunta&quot;" newline="True"/>
+                                    <output expression="&quot;Quanto &#233; 5 X 5? &quot;" newline="True"/>
+                                    <input variable="resposta"/>
+                                    <if expression="resposta = 25">
+                                        <then>
+                                            <output expression="&quot;Resposta correta&quot;" newline="True"/>
+                                            <output expression="&quot;PARABENS!!&quot;" newline="True"/>
+                                            <output expression="&quot;Voc&#234; finalizou o jogo!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Resposta errada&quot;" newline="True"/>
+                                            <output expression="&quot;FIM DE JOGO&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </do>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
