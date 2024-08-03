@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-27 12:56:45 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7RVNONTEyLTEyNDI5ODc7MjAyNC0wNy0yNzsiMTI6MzA6MDMgIjszMTg2"/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7RVNONTEyLTEyNDI5ODc7MjAyNC0wNy0yNzsiMTI6NTY6NDUgIjsxOzMzMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreva um numero&quot;" newline="True"/>
+            <comment text="Armazenar numero fornecido pelo usuario"/>
+            <input variable="num"/>
+            <if expression="num%2 == 0">
+                <then>
+                    <output expression="&quot;Est&#233; n&#250;mero e par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Este numero e Impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

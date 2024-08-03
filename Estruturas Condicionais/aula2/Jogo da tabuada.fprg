@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="joaov"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-28 05:00:43 "/>
+        <attribute name="created" value="am9hb3Y7SlY7MjAyNC0wNy0yODsiMTE6NTA6MjcgIjsxODk5"/>
+        <attribute name="edited" value="am9hb3Y7SlY7MjAyNC0wNy0yODsiMDU6MDA6NDMgIjszOzIwMDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="resposta" type="Integer" array="False" size=""/>
+            <assign variable="resposta" expression="9999"/>
+            <declare name="r" type="Integer" array="False" size=""/>
+            <comment text="o jogo se inicia com a variavel resposta sendo 0 sendo atualizada a cada resposta do usuario"/>
+            <output expression="&quot;Deseja comecar? digite 0 para sim e 1 para nao&quot;" newline="True"/>
+            <input variable="r"/>
+            <while expression="r = 0">
+                <do expression="r = 0">
+                    <output expression="&quot;Bem vindo ao jogo da tabuada&quot;" newline="True"/>
+                    <output expression="&quot;O objetivo do jogo e reponder corretamente as mutiplica&#231;&#227;o apresentada, se correta voc&#234; passa para proxima se errada o jogo acaba&quot;" newline="True"/>
+                    <output expression="&quot;Vamos comecar&quot;" newline="True"/>
+                    <output expression="&quot;Quanto &#233; 15 X 2? &quot;" newline="True"/>
+                    <input variable="resposta"/>
+                    <comment text="aqui o usuario vai intruzir sua resposta&#13;&#10; ela ira atualizar e ficar armazenada na variavel"/>
+                    <if expression="resposta != 30">
+                        <then>
+                            <comment text="se por acaso a resposta for diferente de 30 ele ira receber uma mensagem de &quot;resposta errada&quot; e o jogo ira finalizar"/>
+                            <output expression="&quot;Resposta errada&quot;" newline="True"/>
+                            <output expression="&quot;FIM DE JOGO&quot;" newline="True"/>
+                            <output expression="&quot;Deseja recomecar? Digite 0 para sim e 1 para n&#227;o&quot;" newline="True"/>
+                            <input variable="r"/>
+                            <comment text="caso o usuario erre a resposta ele podera reiniciar o jogo automaticamente sem necessitar abrir-lo novamente"/>
+                        </then>
+                        <else>
+                            <comment text="se a resposta for 30 o jogo ira continuar ate a proxima pergunta"/>
+                            <output expression="&quot;Resposta correta&quot;" newline="True"/>
+                            <output expression="&quot;Vamos para proxima pergunta&quot;" newline="True"/>
+                            <output expression="&quot;Quanto &#233; 9 X 9? &quot;" newline="True"/>
+                            <input variable="resposta"/>
+                            <if expression="resposta != 81">
+                                <then>
+                                    <comment text="se por acaso a resposta for diferente de 81 ele ira receber uma mensagem de &quot;resposta errada&quot; e o jogo ira finalizar"/>
+                                    <output expression="&quot;Resposta errada&quot;" newline="True"/>
+                                    <output expression="&quot;FIM DE JOGO&quot;" newline="True"/>
+                                    <output expression="&quot;Deseja recomecar? Digite 0 para sim e 1 para n&#227;o&quot;" newline="True"/>
+                                    <input variable="r"/>
+                                </then>
+                                <else>
+                                    <comment text="se a resposta for 81 o jogo ira continuar ate a proxima pergunta"/>
+                                    <output expression="&quot;Resposta correta&quot;" newline="True"/>
+                                    <output expression="&quot;Vamos para proxima pergunta&quot;" newline="True"/>
+                                    <output expression="&quot;Quanto &#233; 5 X 5? &quot;" newline="True"/>
+                                    <input variable="resposta"/>
+                                    <if expression="resposta = 25">
+                                        <then>
+                                            <comment text="se a resposta for 25 o jogo ira mostar uma mensagem de parabens e informar que o usuario conseguiu finalizar o jogo repondendo todas as perguntas corretas"/>
+                                            <output expression="&quot;Resposta correta&quot;" newline="True"/>
+                                            <output expression="&quot;PARABENS!!&quot;" newline="True"/>
+                                            <output expression="&quot;Voc&#234; finalizou o jogo!&quot;" newline="True"/>
+                                            <comment text="assim que o jogo e finalizado o programa se encerra"/>
+                                            <output expression="&quot;Deseja recomecar? Digite 0 para sim e 1 para n&#227;o&quot;" newline="True"/>
+                                            <input variable="r"/>
+                                            <comment text="aqui e apenas para atualizar a variavel r com outro numero que nao seja 0 para que o jogo nao reicie novamente"/>
+                                        </then>
+                                        <else>
+                                            <comment text="se por acaso a resposta for diferente de 25 ele ira receber uma mensagem de &quot;resposta errada&quot; e o jogo ira finalizar"/>
+                                            <output expression="&quot;Resposta errada&quot;" newline="True"/>
+                                            <output expression="&quot;FIM DE JOGO&quot;" newline="True"/>
+                                            <output expression="&quot;Deseja recomecar? Digite 0 para sim e 1 para n&#227;o&quot;" newline="True"/>
+                                            <input variable="r"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </do>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
