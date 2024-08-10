@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="joaov"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-04 06:18:41 "/>
+        <attribute name="created" value="am9hb3Y7SlY7MjAyNC0wOC0wNDsiMDY6MDY6MjcgIjsxODk5"/>
+        <attribute name="edited" value="am9hb3Y7SlY7MjAyNC0wOC0wNDsiMDY6MTg6NDEgIjsxOzIwMDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c, f" type="Real" array="False" size=""/>
+            <comment text="variaveis que v&#227;o receber os valores de temperatura de farenheit e celcius"/>
+            <output expression="&quot;Qual a temperatura em FAHRENHEIT:&quot;" newline="True"/>
+            <input variable="f"/>
+            <comment text="vai perguntar e atualizar o valor da temperatura em farenheit"/>
+            <assign variable="c" expression="(f - 32) / 1.8"/>
+            <comment text="caulculo para saber qual a temperatura em celcius a partir da temperatura em farenheit fornecida"/>
+            <output expression="&quot;A temperatura em CELSIUS e de &quot; &amp; c &amp; &quot;&#176;C&quot;" newline="True"/>
+            <comment text="ira mostrar a temperatura em celcius"/>
+        </body>
+    </function>
+</flowgorithm>
